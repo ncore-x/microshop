@@ -23,11 +23,7 @@ def hello(name: str = "World"):
 
 @app.post("/calc/res")
 def calculate(a: int, b: int):
-    return {
-        "a": a,
-        "b": b,
-        "result": a+b
-    }
+    return {"a": a, "b": b, "result": a + b}
 
 
 if __name__ == "__main__":
